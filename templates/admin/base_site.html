@@ -1,0 +1,10 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% comment %} Ref: https://docs.djangoproject.com/en/5.0/intro/tutorial07/#customize-the-admin-look-and-feel {% endcomment %}
+{% block branding %}
+<div id="site-name"><a href="{% url 'admin:index' %}">Polls Administration</a><div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

@@ -1,0 +1,36 @@
+# IDE files
+.idea/
+.vscode/
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Log files
+*.log
+
+# Database
+db.sqlite3
+
+# Media files
+media/
+
+# Static files
+static/
+
+# Virtual environment and environment variables
+.env
+.venv/
+
+# Ignore migrations, as they can be automatically recreated
+**/migrations/
+
+# Batch files
+venv.bat
+novenv.bat
+freeze.bat
+runserver.bat
+makemigrations.bat
+migrate.bat
+shell.bat
